@@ -57,9 +57,9 @@ function addTask(task){
 	showNotification("Task cannot be added")
 }
 
-function showNotification(text){
-	alert(text);
-}
+// function showNotification(text){
+// 	alert(text);
+// }
 
 function handleInputKeypress(e){
 	if (e.key === "Enter"){
