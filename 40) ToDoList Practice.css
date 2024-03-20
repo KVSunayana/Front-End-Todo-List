@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; 
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/193/487/615/tent-camping-milky-way-reflection-wallpaper-preview.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: cursive;
+  color: darkorange;
+}
+h1 {
+  margin-bottom: 20px;
+  color: darkorange;
+  font-size: 50px;
+  font-family: cursive;
+  text-shadow: 3px 3px 3px black;
+  display: block;
+}
+*{
+	box-sizing: border-box;
+	font-family: fantasy;
+}
+#container{
+  width: 520px;
+  margin: 0 auto;
+  background-color: #2d2a266e;
+  padding: 20px;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: inherit;
+	align-items: center;
+}
+ul li{
+	background: #262407a3;
+	border-radius: 20px;
+	border: 3px solid #020202;
+}
+#list input{
+	padding: 0;
+	height: initial;
+	width: initial;
+	margin-bottom: 0;
+	display: none;
+	cursor: pointer;
+}
+#list label{
+	position: relative;
+	cursor: pointer;
+}
+#list label:before{
+	content: '';
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: 3px solid orange;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.1);
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 10px;
+}
+#list input:checked + label:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 7px;
+	height: 10px;
+	border: 2px solid ghostwhite;
+	border-width: 0 2px 2px 0;
+	transform: rotate(30deg);
+}
+#list input:checked + label:before{
+	background: azure;
+}
+#list input:checked + label{
+	text-decoration: line-through;
+}
+.delete{
+	height: 35px;
+	padding: 5px 0;
+	border-radius: 3px;
+}
+.delete:hover{
+	background: orangered;
+	cursor: pointer;
+}
+h1{
+	text-align: center;
+}
+.add-task{
+	width: 100%;
+	outline: none;
+	font-size: 15px;
+	padding: 11px;
+	border: 5px solid #9f7118;
+	margin-bottom: 3px;
+	border-radius: 20px;
+}
+#total-tasks{
+	margin-bottom: 20px;
+	font-size: 18px;
+	margin-left: 40%;
+	color: #ddcf0f;
+	background-color: #130e07ab;
+	text-align: center;
+}
+
+
+
+
+
+
