@@ -31,7 +31,7 @@ function toggleTask (taskId){
 		const currentTask = task[0];
 		currentTask.done = !currentTask.done;
 		renderList();
-		showNotification("Task toggled Successfully");
+		// showNotification("Task toggled Successfully");
 		return;
 	}
 	showNotification("Couldn't toggle the task")
@@ -44,22 +44,22 @@ function deleteTask(taskId) {
 
 	tasks = newTasks;
 	renderList();
-	showNotification("Task deleted Successfully");
+	// showNotification("Task deleted Successfully");
 }
 
 function addTask(task){
 	if (task){
 		tasks.push(task);
 		renderList();
-		showNotification("Task added Successfully");
+		// showNotification("Task added Successfully");
 		return;
 	}
 	showNotification("Task cannot be added")
 }
 
-// function showNotification(text){
-// 	alert(text);
-// }
+function showNotification(text){
+	alert(text);
+}
 
 function handleInputKeypress(e){
 	if (e.key === "Enter"){
